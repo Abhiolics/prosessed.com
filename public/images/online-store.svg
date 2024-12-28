@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50" viewBox="0 0 50 50" id="OnlineStore">
+  <path fill="#004b87" d="M1,13.8244v22.3512c0,1.6569,1.3431,3,3,3h42c1.6569,0,3-1.3431,3-3V13.8244c0-1.6569-1.3431-3-3-3H4
+			C2.3431,10.8244,1,12.1675,1,13.8244z" class="color444445 svgShape"></path>
+  <rect width="36.474" height="24.886" x="6.227" y="12.557" fill="#ffffff" class="colorffffff svgShape"></rect>
+  <path fill="#676869" d="M4.9956,22.6396v4.7207c0,0.3413-0.2793,0.625-0.625,0.625c-0.3458,0-0.625-0.2837-0.625-0.625v-4.7207
+				c0-0.3413,0.2793-0.625,0.625-0.625C4.7164,22.0146,4.9956,22.2983,4.9956,22.6396z" class="color696967 svgShape"></path>
+  <circle cx="2.466" cy="25" r=".5" fill="#676869" class="color696967 svgShape"></circle>
+  <path fill="#676869" d="M45.8508,23c-1.1027,0-2,0.8969-2,2s0.8973,2,2,2s2-0.8969,2-2S46.9536,23,45.8508,23z M45.8508,26.2
+			c-0.6617,0-1.2-0.5383-1.2-1.2s0.5383-1.2,1.2-1.2c0.6617,0,1.2,0.5383,1.2,1.2S46.5125,26.2,45.8508,26.2z" class="color696967 svgShape"></path>
+  <rect width="30" height="1.5" x="9.464" y="21.986" fill="#67ffa7" class="colorffca67 svgShape"></rect>
+  <rect width="30" height="1.5" x="9.464" y="31.32" fill="#67ffa7" class="colorffca67 svgShape"></rect>
+  <path fill="#6a9d80" d="M19.0663,17.6826v4.3h-6.21v-4.3c0-0.28,0.22-0.5,0.5-0.5h5.21
+						C18.8463,17.1826,19.0663,17.4025,19.0663,17.6826z" class="color896a9d svgShape"></path>
+  <rect width="1.528" height="1.069" x="15.196" y="17.18" fill="#edefee" class="colorefefed svgShape"></rect>
+  <path fill="#48d785" d="M27.5694,17.6826v4.3h-6.21v-4.3c0-0.28,0.22-0.5,0.5-0.5h5.21
+						C27.3494,17.1826,27.5694,17.4025,27.5694,17.6826z" class="colord75548 svgShape"></path>
+  <rect width="1.528" height="1.069" x="23.699" y="17.18" fill="#edefee" class="colorefefed svgShape"></rect>
+  <path fill="#2ecc71" d="M36.0725,17.6826v4.3h-6.21v-4.3c0-0.28,0.22-0.5,0.5-0.5h5.21
+						C35.8526,17.1826,36.0725,17.4025,36.0725,17.6826z" class="color74a842 svgShape"></path>
+  <rect width="1.528" height="1.069" x="32.202" y="17.18" fill="#edefee" class="colorefefed svgShape"></rect>
+  <path fill="#48d785" d="M23.3178,27.0203v4.3h-6.21v-4.3c0-0.28,0.22-0.5,0.5-0.5h5.21
+						C23.0979,26.5203,23.3178,26.7403,23.3178,27.0203z" class="colord75548 svgShape"></path>
+  <rect width="1.528" height="1.069" x="19.448" y="26.517" fill="#edefee" class="colorefefed svgShape"></rect>
+  <path fill="#6a9d80" d="M31.821,27.0203v4.3h-6.21v-4.3c0-0.28,0.22-0.5,0.5-0.5h5.21
+						C31.601,26.5203,31.821,26.7403,31.821,27.0203z" class="color896a9d svgShape"></path>
+  <rect width="1.528" height="1.069" x="27.951" y="26.517" fill="#edefee" class="colorefefed svgShape"></rect>
+</svg>
