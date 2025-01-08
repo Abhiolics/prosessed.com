@@ -2,6 +2,7 @@
 
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { performServerHandshake } from "http2";
 
 export default function TaglineSection() {
   return (
@@ -21,17 +22,28 @@ export default function TaglineSection() {
       </div>
 
       {/* Illustration Section */}
-      <div className="w-full max-w-lg flex justify-center">
+      <div className="w-full mt-10 flex flex-col sm:flex-row justify-center items-center space-y-8 sm:space-y-0 sm:space-x-8">
+        {/* Lottie Animation */}
         <DotLottieReact
           src="https://lottie.host/def7ec4e-7ed8-46bf-99b1-e7a789a4b686/SrIWGKQ5J1.lottie"
           loop
           autoplay
-          style={{ width: "300px", height: "300px" }}
+        
+          className="w-72 h-72 sm:w-96 sm:h-96 lg:w-[600px] lg:h-[600px]"
+        />
+
+        {/* SVG Image */}
+        <img
+          src="/images/penta.svg"
+          alt="Penta Illustration"
+          className="w-70 h-70 sm:w-80 sm:h-80 lg:w-[500px] lg:h-[500px]"
         />
       </div>
     </div>
   );
 }
+
+
 
 
 

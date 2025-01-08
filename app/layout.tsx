@@ -42,7 +42,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>{/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
-      <body className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 tracking-tight`}>
+      <body className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-white-900 dark:text-white-200 tracking-tight`}>
         <Theme>
           <div className="flex flex-col min-h-screen overflow-hidden">
             <Header />

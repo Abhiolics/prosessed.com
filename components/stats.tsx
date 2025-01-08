@@ -7,18 +7,15 @@ import Image from "next/image";
 export default function Stats() {  
 
   const images = [
-    "/images/user-1.jpg",
-    "/images/user-2.jpg",
-    "/images/user-3.jpg",
-    "/images/user-4.jpg",
-    "/images/user-5.jpg",
-    "/images/user-6.jpg",
-    "/images/user-7.jpg",
+    "/images/goli.avif",
+    "/images/hfc.avif",
+    "/images/joyco.avif",
+    "/images/bf.avif",
   ];
   return (
     <section className="relative">
 
-      <div className="absolute bottom-0 left-0 right-0 h-128 bg-gradient-to-t from-gray-100 to-white pointer-events-none -z-10 dark:hidden" aria-hidden="true"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-128 bg-gradient-to-t from-gray-1 to-white pointer-events-none -z-10 dark:hidden" aria-hidden="true"></div>
   
       {/* <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
@@ -49,7 +46,7 @@ export default function Stats() {
 
       <div className="relative overflow-hidden py-10 ">
   {/* Section Heading */}
-  <h2 className="text-center text-3xl font-heading font-semibold mb-8 text-gray-800">
+  <h2 className="text-center text-4xl font-heading font-semibold mb-8 text-gray-900">
     Our Customers
   </h2>
 

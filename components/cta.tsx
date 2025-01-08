@@ -4,7 +4,7 @@ export default function Cta() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       {/* Heading */}
       <h2 className="text-center text-3xl md:text-3xl font-semibold mb-12 font-heading">
-        Have questions? We're here to help
+        Have questions? We're here to help you
       </h2>
 
       {/* CTA box */}
@@ -35,7 +35,7 @@ export default function Cta() {
           <div className="flex items-center justify-center md:justify-end md:pr-12 pt-4 md:pt-0">
             <svg
               viewBox="0 0 24 24"
-              className="w-12 h-12 text-[#ff4d00] mr-6"
+              className="w-12 h-12 text-[#2ECC71] mr-6"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -46,8 +46,8 @@ export default function Cta() {
             </svg>
             <div>
               <div className="text-sm font-medium text-gray-400 mb-1">CALL US</div>
-              <div className="text-2xl md:text-3xl font-semibold text-[#ff4d00]">
-                1300 336 724
+              <div className="text-2xl md:text-3xl font-semibold text-[#2ECC71]">
+              +91 7276106858
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Cta() {
           <div className="flex items-center justify-center md:justify-start md:pl-12 pt-4 md:pt-0">
             <svg
               viewBox="0 0 24 24"
-              className="w-12 h-12 text-[#ff4d00] mr-6"
+              className="w-12 h-12 text-[#2ECC71] mr-6"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -69,8 +69,8 @@ export default function Cta() {
             </svg>
             <div>
               <div className="text-sm font-medium text-gray-400 mb-1">SAY HI</div>
-              <div className="text-2xl md:text-3xl font-semibold text-[#ff4d00]">
-                Email us
+              <div className="text-xl md:text-2xl font-semibold text-[#2ECC71]">
+                navneet@prosessed.com
               </div>
             </div>
           </div>

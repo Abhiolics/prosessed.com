@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import impo from 'public/images/impo.svg';
+import impo from 'public/images/importerss.svg';
 import expo from 'public/images/expo.svg';
 import Link from 'next/link';
 
@@ -9,14 +9,14 @@ export default function Ttabs() {
   const [activeTab, setActiveTab] = useState('importer');
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-6 lg:px-16 bg-gray-50">
+    <div className="flex flex-col items-center justify-center py-12 px-6 lg:px-16 bg-gray-">
       {/* Heading and Subheading */}
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-4xl font-heading font-bold text-gray-800 mb-4">
-          What you can do with ProSessed?
+          {/* What you can do with ProSessed? */}
         </h2>
         <p className="text-sm md:text-lg text-gray-600 font-subheading capitalize">
-          Prosessed is one of its kind Ordering Platform specifically designed for Food Industry by enabling them to increase their revenue by simplifying the entire ordering process from cataloging, online storefront, order taking, container planning, invoicing and payment collection.
+        {/* A Unique Food Industry Ordering Platform Boosting Revenue by Streamlining Cataloging, Ordering, Planning, and Payments. */}
         </p>
       </div>
 
@@ -41,7 +41,7 @@ export default function Ttabs() {
       </div>
 
       {/* Popped Screen Content */}
-      <div className="relative bg-white font-heading shadow-lg rounded-xl p-6 w-full max-w-4xl lg:flex items-center">
+      <div className="relative bg-white font-heading shadow-lg shadow-emerald-200 border-blue-500 rounded-xl p-6 w-full max-w-4xl lg:flex items-center">
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-full text-gray-700">
           <h3 className="text-xl md:text-2xl font-semibold mb-4">
@@ -52,8 +52,8 @@ export default function Ttabs() {
           <ul className="space-y-5">
             {(activeTab === 'importer'
               ? [
-                  'Let your customer place an order to you via your App based storefront.',
-                  'Empower your Sales Team to sell better via Rep Ordering App.',
+                  "Let your customer place an order via your app-based storefront.",
+                  "Empower your sales team to sell better via the Rep Ordering App.",
                   'Automate picking slips and invoicing processes.',
                   'Simplify warehouse and delivery operations with dedicated apps.',
                   'Stay on top of payments with automated reminders, alerts, and app-based payment.',
@@ -62,9 +62,9 @@ export default function Ttabs() {
               : [
                   'An Online Storefront to showcase product range, categories, offers, and pricing.',
                   'A Wholesale Ordering App for Importer to request for quote.',
-                  'A complete export documentation and compliance checklist for every order.',
-                  'An option for clients to open bank accounts in various countries.',
-                  'Create export-compliant packing lists and invoices.',
+                  "Export documentation and compliance checklists for every order.",
+                  "Options for clients to open bank accounts in multiple countries.",
+                  "Export-compliant packing lists and invoices generated seamlessly.",
 
                 ]
             ).map((point, index) => (
@@ -88,7 +88,7 @@ export default function Ttabs() {
       href={activeTab === 'importer' ? '/importers' : '/exporters'}
       className="inline-flex items-center bg-[#004B87] text-white px-6 py-3 rounded-full font-medium text-lg hover:bg-teal-600 transition-colors"
     >
-      Read more
+      Get Started
       <svg
         className="w-5 h-5 ml-2"
         xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function Ttabs() {
           <Image
             src={activeTab === 'importer' ? impo : expo}
             alt={`${activeTab} Illustration`}
-            className="w-full max-w-[300px] object-contain"
+            className="w-full max-w-[400px] object-contain"
             width={300}
             height={300}
           />

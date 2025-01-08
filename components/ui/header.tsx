@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Logo from './logo'
 import Dropdown from '@/components/utils/dropdown'
-import ThemeToggle from './theme-toggle'
 import MobileMenu from './mobile-menu'
 import logo from "public/images/logoo.png"
 import Image from 'next/image'
@@ -29,66 +28,66 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop menu links */}
             <ul className="flex grow flex-wrap items-center font-medium">
-              <li>
+              {/* <li>
                 <Link
                   href="/about"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   About Us
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   href="/blog"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   How It Works
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   href="/testimonials"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Pricing
                 </Link>
-              </li>
+              </li> */}
               {/* 1st level: hover */}
-              <Dropdown title="Resources">
+              {/* <Dropdown title="Resources"> */}
                 {/* 2nd level: hover */}
-                <li>
+                {/* <li>
                   <Link
                     href="/help"
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                    Features
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link
-                    href="/404"
+                    href="/contact"
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                    Contact Us
                   </Link>
-                </li>
-              </Dropdown>
+                </li> */}
+              {/* </Dropdown> */}
             </ul>
 
             {/* Desktop lights switch */}
-            {/* <ThemeToggle className="ml-3" /> */}
+          
 
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <Link href="/contact" className="btn-sm text-white bg-teal-500 hover:bg-teal-400 ml-6">
-                Request a Demo
+                <Link href="/contact" className="btn-sm text-white bg-emerald-500 hover:bg-blue-500 ml-6">
+              Contact Us
                 </Link>
               </li>
             </ul>
           </nav>
 
-          <MobileMenu />
+          {/* <MobileMenu /> */}
 
         </div>
       </div>

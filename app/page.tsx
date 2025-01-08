@@ -17,6 +17,8 @@ import Ttabs from '@/components/ttabs'
 import TaglineSection from '@/components/taglinesection'
 import ComparisonSection from '@/components/ComparisonSection'
 import { AnimatedBeamDemo } from '@/components/integration'
+import IntegrationsSection from '@/components/newint'
+import Newtabs from '@/components/newtabs'
 
 
 
@@ -24,15 +26,18 @@ export default function Home() {
   return (
     <>
       {/*  Page illustration */}
-      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
+      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1 " aria-hidden="true">
         <PageIllustration />
       </div>
       <Hero />
       <Stats />
-      <Ttabs/>
       <TaglineSection/>
-      <ComparisonSection/>
-      <AnimatedBeamDemo/>
+      <Newtabs/>
+      {/* <Ttabs/> */}
+     
+      {/* <ComparisonSection/> */}
+      {/* <IntegrationsSection/> */}
+      {/* <AnimatedBeamDemo/> */}
     
       {/* <Carousel /> */}
       {/* <Tabs /> */}
@@ -40,7 +45,7 @@ export default function Home() {
       {/* <Process /> */}
       {/* <PricingTables /> */}
       {/* <TestimonialsBlocks /> */}
-      <FeaturesBlocks />
+      {/* <FeaturesBlocks /> */}
       <Cta />
     </>
   )

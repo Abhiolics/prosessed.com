@@ -262,7 +262,7 @@
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 
 export default function Footer() {
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -295,12 +295,10 @@ export default function Footer() {
   ]
 
   const pages = {
-    "Resources": "/resources",
-    "Demo": "/demo",
-    "About Us": "/about",
-    "Autonomous Sourcing": "/autonomous-sourcing",
-    "Source to Pay": "/source-to-pay",
-    "Career": "/career"
+    "Resources": "/resource",
+    "Demo": "/dem",
+    "About Us": "/abou",
+
   }
 
   return (
@@ -360,21 +358,21 @@ export default function Footer() {
             {/* Logo and Social Links */}
             <div>
             
-              <img src="/images/logoo.avif" alt="Example Image" className='mb-4 w-150 h-20' />
-              <p className="text-gray-400 mb-6">
-                Scalling Food Businesses
+              <img src="/images/logoo.avif" alt="Example Image" className='mb-4 w-120 h-15' />
+              <p className="text-gray-400 mb-6 font-subheading">
+              We envision to make Food Cross-border trade more efficient, streamlined and profitable.
               </p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="https://in.linkedin.com/company/prosessed" target='blank' className="text-gray-400 hover:text-white">
                   <Linkedin className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="https://www.facebook.com/people/ProSessed/61558020044438/" target='blank' className="text-gray-400 hover:text-white">
                   <Facebook className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
-                  <Twitter className="w-5 h-5" />
+                <Link href="https://www.youtube.com/channel/UCUG5xtDp-9l6vkmwyj4Lp5Q"  target='blank' className="text-gray-400 hover:text-white">
+                  <Youtube className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="https://www.instagram.com/prosessed/" target='blank' className="text-gray-400 hover:text-white">
                   <Instagram className="w-5 h-5" />
                 </Link>
               </div>
@@ -383,7 +381,7 @@ export default function Footer() {
             {/* Pages */}
             <div>
               <h4 className="text-lg font-semibold mb-6">PAGES</h4>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4">
                 {Object.entries(pages).map(([name, url]) => (
                   <Link
                     key={name}

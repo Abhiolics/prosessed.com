@@ -1,4 +1,4 @@
-/* Switch element */
+/* Switch element
 .form-switch {
     @apply relative select-none;
     width: 44px;
@@ -24,4 +24,4 @@
 
 .form-switch input[type="checkbox"]:checked+label>span:first-child {
     left: 22px;
-}
+} */
