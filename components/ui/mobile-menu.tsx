@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
 import Logo from './logo'
-import ThemeToggle from './theme-toggle'
+// import ThemeToggle from './theme-toggle'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -37,7 +37,7 @@ export default function MobileMenu() {
     <div className="inline-flex md:hidden">
 
       {/* Mobile lights switch */}
-      <ThemeToggle className="mr-6" />
+      {/* <ThemeToggle className="mr-6" /> */}
 
       {/* Hamburger button */}
       <button
