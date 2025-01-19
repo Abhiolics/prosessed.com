@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useEffect, useRef } from 'react';
@@ -28,19 +25,16 @@ export default function Footer() {
 
     const timer = setInterval(scroll, 30);
 
-    scrollContainer.addEventListener('mouseenter', () => clearInterval(timer));
-    scrollContainer.addEventListener('mouseleave', () => {
-      clearInterval(timer);
-      setInterval(scroll, 30);
-    });
+    const pauseScroll = () => clearInterval(timer);
+    const resumeScroll = () => setInterval(scroll, 30);
+
+    scrollContainer.addEventListener('mouseenter', pauseScroll);
+    scrollContainer.addEventListener('mouseleave', resumeScroll);
 
     return () => {
       clearInterval(timer);
-      scrollContainer.removeEventListener('mouseenter', () => clearInterval(timer));
-      scrollContainer.removeEventListener('mouseleave', () => {
-        clearInterval(timer);
-        setInterval(scroll, 30);
-      });
+      scrollContainer.removeEventListener('mouseenter', pauseScroll);
+      scrollContainer.removeEventListener('mouseleave', resumeScroll);
     };
   }, []);
 
@@ -60,7 +54,7 @@ export default function Footer() {
     { name: 'Demo', url: '/demo' },
     { name: 'About Us', url: '/about' },
     { name: 'Terms of Use', url: '/terms' },
-    { name: 'Privacy Policy', url: '/privacy-policy' },
+    { name: 'Privacy Policy', url: '/privacypolicy' },
   ];
 
   // Function to handle CTA button click
@@ -69,13 +63,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-black text-white -z-1">
+    <footer className="relative bg-black text-white">
       <div className="absolute top-0 right-0 w-72 h-72 bg-emerald-500 blur-3xl opacity-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl font-normal font-heading">
-            Unlock the Future of Food Ordering with <span className="text-[#0C8EF7]">ProSessed’s</span>
+            Unlock the Future of Food Ordering with{' '}
+            <span className="text-[#0C8EF7]">ProSessed’s</span>
           </h2>
           <br />
           <h3 className="text-3xl sm:text-4xl font-heading mb-8 italic">
@@ -118,10 +113,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
               <div className="flex flex-col space-y-4 mb-6">
-                <Link href="https://www.apple.com/app-store/" passHref legacyBehavior>
-                  <a target="_blank" rel="noopener noreferrer">
-                    <Image src="/images/ap.png" alt="Get ProSessed App from App Store" width={200} height={200} className="cursor-pointer" />
-                  </a>
+                <Link href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+                  <Image src="/images/ap.png" alt="Get ProSessed App from App Store" width={200} height={200} className="cursor-pointer" />
                 </Link>
               </div>
               <p className="text-gray-400 font-heading">
@@ -133,8 +126,8 @@ export default function Footer() {
               <h4 className="text-lg font-semibold mb-6">PAGES</h4>
               <div className="grid grid-cols-2 gap-4 font-heading">
                 {pages.map((page) => (
-                  <Link key={page.name} href={page.url} passHref>
-                    <p className="text-gray-400 hover:text-white cursor-pointer">{page.name}</p>
+                  <Link key={page.name} href={page.url} className="text-gray-400 hover:text-white cursor-pointer">
+                    {page.name}
                   </Link>
                 ))}
               </div>
@@ -144,18 +137,18 @@ export default function Footer() {
               <h4 className="text-lg font-semibold mb-6">MORE LINKS</h4>
               <ul className="space-y-3 font-heading">
                 <li>
-                  <Link href="/faq" passHref>
-                    <p className="text-gray-400 hover:text-white cursor-pointer">FAQs</p>
+                  <Link href="/faq" className="text-gray-400 hover:text-white cursor-pointer">
+                    FAQs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" passHref>
-                    <p className="text-gray-400 hover:text-white cursor-pointer">Contact</p>
+                  <Link href="/contact" className="text-gray-400 hover:text-white cursor-pointer">
+                    Contact
                   </Link>
                 </li>
                 <li>
-                  <Link href="/careers" passHref>
-                    <p className="text-gray-400 hover:text-white cursor-pointer">Careers</p>
+                  <Link href="/careers" className="text-gray-400 hover:text-white cursor-pointer">
+                    Careers
                   </Link>
                 </li>
               </ul>
