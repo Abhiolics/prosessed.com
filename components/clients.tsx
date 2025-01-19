@@ -9,7 +9,7 @@ export default function TrustedBy() {
     { name: "Healthy Food Crew", src: "/images/hfc.webp", width: 140, height: 64 },
     { name: "Joyco Exports", src: "/images/joyco.webp", width: 120, height: 64 },
     { name: "Cerro", src: "/images/cerro.jpg", width: 130, height: 64 },
-    { name: "Goli Soda", src: "/images/goli.avif", width: 160, height: 64 },
+    { name: "Goli Soda", src: "/images/Goli.avif", width: 160, height: 64 },
     { name: "Brand Name", src: "/images/bf.avif", width: 110, height: 64 },
     { name: "Another Brand", src: "/images/bi.png", width: 140, height: 64 }
   ];
