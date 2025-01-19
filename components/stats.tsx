@@ -1,110 +1,53 @@
-"use client";
-import Image from "next/image";
-
-
-
-
-export default function Stats() {  
-
-  const images = [
-    "/images/goli.avif",
-    "/images/hfc.avif",
-    "/images/joyco.avif",
-    "/images/bf.avif",
+export default function Stats() {
+  const metrics = [
+    {
+      value: "5000+",
+      label: "Products",
+    },
+    {
+      value: "$4M",
+      label: "Worth of Orders Processed",
+    },
+    {
+      value: "15+",
+      label: "Categories",
+    },
+    {
+      value: "8+",
+      label: "Clients",
+    },
   ];
+
   return (
-    <section className="relative">
-
-      <div className="absolute bottom-0 left-0 right-0 h-128 bg-gradient-to-t from-gray-1 to-white pointer-events-none -z-10 dark:hidden" aria-hidden="true"></div>
-  
-      {/* <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
-          <div className="grid grid-cols-2 gap-4 lg:gap-6 md:grid-cols-4 text-center" data-aos-id-stats>
-          
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]">
-              <div className="font-red-hat-display text-3xl font-black tracking-tighter mb-1">2.4M</div>
-              <div className="text-gray-600 dark:text-gray-400">Days turn around</div>
-            </div>
-       
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="100">
-              <div className="font-red-hat-display text-3xl font-black tracking-tighter mb-1">7M</div>
-              <div className="text-gray-600 dark:text-gray-400">Days turn around</div>
-            </div>
-         
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="200">
-              <div className="font-red-hat-display text-3xl font-black tracking-tighter mb-1">7.4%</div>
-              <div className="text-gray-600 dark:text-gray-400">Days turn around</div>
-            </div>
-           
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="300">
-              <div className="font-red-hat-display text-3xl font-black tracking-tighter mb-1">49K</div>
-              <div className="text-gray-600 dark:text-gray-400">Days turn around</div>
-            </div>
-          </div>
+    <div className="flex items-center justify-center bg-[gray-50] px-4 py-12 mb-20">
+      <div className="bg-[#E3F8F8] py-16 px-8 sm:py-24 sm:px-12 rounded-2xl  relative max-w-6xl w-full">
+        {/* Title */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading tracking-tight">
+            Transforming Global Trade
+            <br />
+            with <span className="text-[#0095FF]">Impactful Results</span>
+          </h2>
         </div>
-      </div> */}
 
-      <div className="relative overflow-hidden py-10 ">
-  {/* Section Heading */}
-  <h2 className="text-center text-4xl font-heading font-semibold mb-8 text-gray-900">
-    Our Customers
-  </h2>
-
-  {/* Carousel */}
-  <div className="flex overflow-hidden relative">
-    {/* Carousel wrapper */}
-    <div className="flex animate-scroll space-x-8">
-      {images.map((src, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-48 h-48 flex justify-center items-center"
-        >
-          <Image
-            src={src}
-            alt={`Customer ${index + 1}`}
-            width={150}
-            height={150}
-            className="object-contain"
-          />
+        {/* Metrics */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-12">
+          {metrics.map((metric, index) => (
+            <div key={index} className="text-center group">
+              <div className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-2 transition-transform duration-300 ease-out group-hover:scale-110">
+                {metric.value}
+              </div>
+              <div className="text-lg sm:text-xl text-gray-600">{metric.label}</div>
+            </div>
+          ))}
         </div>
-      ))}
+
+        {/* Background Pattern */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[#E3F8F8] opacity-10 rounded-2xl"></div>
+        </div>
+      </div>
     </div>
-
-    {/* Duplicate for seamless scrolling */}
-    <div className="flex animate-scroll space-x-8">
-      {images.map((src, index) => (
-        <div
-          key={`duplicate-${index}`}
-          className="flex-shrink-0 w-48 h-48 flex justify-center items-center"
-        >
-          <Image
-            src={src}
-            alt={`Customer duplicate ${index + 1}`}
-            width={150}
-            height={150}
-            className="object-contain"
-          />
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Tailwind CSS Animation */}
-  <style jsx>{`
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-    .animate-scroll {
-      animation: scroll 20s linear infinite;
-    }
-  `}</style>
-</div>
-
-    </section>
-  )
+  );
 }
+

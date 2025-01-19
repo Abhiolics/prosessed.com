@@ -28,14 +28,14 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop menu links */}
             <ul className="flex grow flex-wrap items-center font-medium">
-              {/* <li>
-                <Link
+              <li>
+                {/* <Link
                   href="/about"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   About Us
-                </Link>
-              </li> */}
+                </Link> */}
+              </li>
               {/* <li>
                 <Link
                   href="/blog"
@@ -44,33 +44,33 @@ export default function Header() {
                   How It Works
                 </Link>
               </li> */}
-              {/* <li>
-                <Link
+              <li>
+                {/* <Link
                   href="/testimonials"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Pricing
-                </Link>
-              </li> */}
+                </Link> */}
+              </li>
               {/* 1st level: hover */}
               {/* <Dropdown title="Resources"> */}
                 {/* 2nd level: hover */}
-                {/* <li>
-                  <Link
+                <li>
+                  {/* <Link
                     href="/help"
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                    Features
-                  </Link>
-                </li> */}
-                {/* <li>
-                  <Link
+                  </Link> */}
+                </li>
+                <li>
+                  {/* <Link
                     href="/contact"
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                    Contact Us
-                  </Link>
-                </li> */}
+                  </Link> */}
+                </li>
               {/* </Dropdown> */}
             </ul>
 
@@ -80,7 +80,7 @@ export default function Header() {
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <Link href="/contact" className="btn-sm text-white bg-emerald-500 hover:bg-blue-500 ml-6">
+                <Link href="/contact" className="btn text-white bg-black hover:bg-emerald-500 ml-6">
               Contact Us
                 </Link>
               </li>

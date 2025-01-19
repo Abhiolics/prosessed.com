@@ -16,9 +16,13 @@ import Cta from '@/components/cta'
 import Ttabs from '@/components/ttabs'
 import TaglineSection from '@/components/taglinesection'
 import ComparisonSection from '@/components/ComparisonSection'
-import { AnimatedBeamDemo } from '@/components/integration'
 import IntegrationsSection from '@/components/newint'
 import Newtabs from '@/components/newtabs'
+import Integration from '@/components/integration'
+import Ctaend from '@/components/ctaend'
+import Clients from '@/components/clients'
+import Testimonial from '@/components/testimonials-blocks'
+
 
 
 
@@ -30,13 +34,15 @@ export default function Home() {
         <PageIllustration />
       </div>
       <Hero />
-      <Stats />
-      <TaglineSection/>
+      <Clients/>
       <Newtabs/>
-      {/* <Ttabs/> */}
-     
+      <TaglineSection/>
+      {/* <Ttabs/>  */}
+     <Stats/>
       {/* <ComparisonSection/> */}
-      {/* <IntegrationsSection/> */}
+      <Integration/>
+      <Testimonial/>
+      <Ctaend/>
       {/* <AnimatedBeamDemo/> */}
     
       {/* <Carousel /> */}

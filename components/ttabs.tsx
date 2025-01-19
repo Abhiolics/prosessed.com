@@ -12,11 +12,11 @@ export default function Ttabs() {
     <div className="flex flex-col items-center justify-center py-12 px-6 lg:px-16 bg-gray-">
       {/* Heading and Subheading */}
       <div className="text-center mb-8">
-        <h2 className="text-2xl md:text-4xl font-heading font-bold text-gray-800 mb-4">
-          {/* What you can do with ProSessed? */}
+        <h2 className="text-2xl md:text-3xl font-heading font-bold text-black mb-4">
+        Unlock Effortless Global Trade with <b className="text-[#0C8EF7] font-semibold">ProSessed</b> 
         </h2>
         <p className="text-sm md:text-lg text-gray-600 font-subheading capitalize">
-        {/* A Unique Food Industry Ordering Platform Boosting Revenue by Streamlining Cataloging, Ordering, Planning, and Payments. */}
+        Revolutionizing food trade by simplifying cataloging, ordering, planning and payments for all
         </p>
       </div>
 
@@ -25,7 +25,7 @@ export default function Ttabs() {
         <button
           onClick={() => setActiveTab('importer')}
           className={`flex-1 font-heading py-3 text-lg md:text-xl rounded-full font-medium transition-colors duration-300 ${
-            activeTab === 'importer' ? 'bg-teal-500 text-white' : 'text-gray-600'
+            activeTab === 'importer' ? 'bg-[#005906] text-white' : 'text-gray-600'
           }`}
         >
           Importers
@@ -33,7 +33,7 @@ export default function Ttabs() {
         <button
           onClick={() => setActiveTab('exporter')}
           className={`flex-1 py-3 font-heading text-lg md:text-xl rounded-full font-medium transition-colors duration-300 ${
-            activeTab === 'exporter' ? 'bg-teal-500 text-white' : 'text-gray-600'
+            activeTab === 'exporter' ? 'bg-[#005906] text-white' : 'text-gray-600'
           }`}
         >
           Exporters
@@ -121,6 +121,10 @@ export default function Ttabs() {
         </div>
       </div>
     </div>
+
+
+
+
   );
 }
 
