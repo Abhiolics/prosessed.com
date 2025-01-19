@@ -63,7 +63,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-black text-white">
+    <footer className="relative bg-black text-white -z-1">
       <div className="absolute top-0 right-0 w-72 h-72 bg-emerald-500 blur-3xl opacity-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
