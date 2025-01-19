@@ -47,7 +47,7 @@ export default function HeroHome() {
   <div className="flex justify-center items-center w-full">
   {/* Display the illu1 SVG */}
   <img 
-    src="/images/heroimg.svg" // Path to your SVG in the public folder
+    src="/images/Heroimg.svg" 
     alt="Illustration"
     className="w-full max-w-md object-contain"
   />
