@@ -19,9 +19,8 @@ export default function FeaturesSection() {
         "Automate picking slips and invoicing.",
         "Streamline warehouse and delivery operations with dedicated apps.",
         "Keep payments on track with automated reminders and alerts.",
-        "Streamline warehouse and delivery operations with dedicated apps.",
       ],
-      image: "/images/Tabimg.svg", // Correct path
+      image: "/images/Tabimg.svg", 
     },
     exporters: {
       title: "Seamless Exporting, Optimized for Growth",
@@ -43,7 +42,7 @@ export default function FeaturesSection() {
 
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
+    <div className="min-h-screen  py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

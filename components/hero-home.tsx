@@ -47,7 +47,7 @@ export default function HeroHome() {
   <div className="flex justify-center items-center w-full">
   {/* Display the illu1 SVG */}
   <img 
-    src="/images/Heroimg.svg" 
+    src="/images/HeroImg.svg" 
     alt="Illustration"
     className="w-full max-w-md object-contain"
   />
