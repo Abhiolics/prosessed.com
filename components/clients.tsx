@@ -36,12 +36,12 @@ export default function TrustedBy() {
   }, []);
 
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-16">
-      <h2 className="mb-12 text-center text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading">
+    <section className="relative mx-auto max-w-7xl px-4 py-16 mt-12">
+      <h2 className="mb-24 text-center text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading">
         Trusted by{" "}
-        <TypingAnimation className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading text-[#0C8EF7]">
-          Food Importers & Exporters
-        </TypingAnimation>
+        {/* <TypingAnimation className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading text-[#0C8EF7]"> */}
+        <span className="text-[#0C8EF7] text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading "> Food Importers & Exporters</span> 
+        {/* </TypingAnimation> */}
       </h2>
 
       {/* Container with blur effects */}

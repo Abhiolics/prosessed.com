@@ -36,7 +36,7 @@ export default function Cta() {
           <div className="overflow-hidden flex items-center">
           <svg
               viewBox="0 0 24 24"
-              className="w-12 h-12 text-[#2ECC71] mr-6"
+              className="w-12 h-12 c mr-6"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"

@@ -129,17 +129,17 @@ export default function Page() {
 
             <div>
               <h3 className="mb-6 text-lg font-semibold">PAGES</h3>
-              <nav className="grid grid-cols-2 gap-4 font-heading">
-                <Link href="/resources" className="text-gray-400 transition-colors hover:text-white">
+              <nav className="grid grid-cols-1 gap-4 font-heading">
+                {/* <Link href="/resources" className="text-gray-400 transition-colors hover:text-white">
                   Resources
-                </Link>
-                <Link href="/demo" className="text-gray-400 transition-colors hover:text-white">
+                </Link> */}
+                {/* <Link href="/demo" className="text-gray-400 transition-colors hover:text-white">
                   Demo
-                </Link>
-                <Link href="/about" className="text-gray-400 transition-colors hover:text-white">
+                </Link> */}
+                {/* <Link href="/about" className="text-gray-400 transition-colors hover:text-white">
                   About Us
-                </Link>
-                <Link href="/terms" className="text-gray-400 transition-colors hover:text-white">
+                </Link> */}
+                <Link href="/termsofuse" className="text-gray-400 transition-colors hover:text-white">
                   Terms of Use
                 </Link>
                 <Link href="/privacypolicy" className="text-gray-400 transition-colors hover:text-white">
@@ -155,11 +155,11 @@ export default function Page() {
                   FAQs
                 </Link>
                 <Link href="/contact" className="block text-gray-400 transition-colors hover:text-white">
-                  Contact
+                  Contact Us
                 </Link>
-                <Link href="/careers" className="block text-gray-400 transition-colors hover:text-white">
+                {/* <Link href="/careers" className="block text-gray-400 transition-colors hover:text-white">
                   Careers
-                </Link>
+                </Link> */}
               </nav>
             </div>
 
