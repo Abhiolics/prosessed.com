@@ -19,7 +19,7 @@ export default function Stats() {
   ];
 
   return (
-    <div className="flex items-center justify-center bg-[gray-50] px-4 py-12 mb-20">
+    <div className="flex items-center justify-center bg-[gray-50] px-4 py-12 mb-20 mt-24">
       <div className="bg-[#E3F8F8] py-16 px-8 sm:py-24 sm:px-12 rounded-2xl  relative max-w-6xl w-full">
         {/* Title */}
         <div className="text-center mb-16">
