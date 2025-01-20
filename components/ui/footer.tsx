@@ -149,9 +149,9 @@ export default function Page() {
             <div>
               <h3 className="mb-6 text-lg font-semibold">MORE LINKS</h3>
               <nav className="space-y-3 font-heading">
-                <Link href="/faq" className="block text-gray-400 transition-colors hover:text-white">
+                {/* <Link href="/faq" className="block text-gray-400 transition-colors hover:text-white">
                   FAQs
-                </Link>
+                </Link> */}
                 <Link href="/contact" className="block text-gray-400 transition-colors hover:text-white">
                   Contact Us
                 </Link>

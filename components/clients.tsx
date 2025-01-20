@@ -1,8 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { TypingAnimation } from "./magicui/typing-animation";
 
 export default function TrustedBy() {
   const logos = [
@@ -14,65 +12,31 @@ export default function TrustedBy() {
     { name: "Another Brand", src: "/images/bi.png", width: 140, height: 64 }
   ];
 
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const scrollContainer = carouselRef.current;
-    if (!scrollContainer) return;
-
-    let scrollAmount = 1;
-
-    const scroll = () => {
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
-      } else {
-        scrollContainer.scrollLeft += scrollAmount;
-      }
-    };
-
-    const interval = setInterval(scroll, 30);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative mx-auto max-w-7xl px-4 py-16 mt-12">
       <h2 className="mb-24 text-center text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading">
-        Trusted by{" "}
-        {/* <TypingAnimation className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading text-[#0C8EF7]"> */}
-        <span className="text-[#0C8EF7] text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading "> Food Importers & Exporters</span> 
-        {/* </TypingAnimation> */}
+        Trusted by
+        <span className="text-[#0C8EF7] text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading"> Food Importers & Exporters</span>
       </h2>
 
-      {/* Container with blur effects */}
-      <div className="relative">
-        {/* Left blur gradient */}
-        <div className="absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
-
-        {/* Right blur gradient */}
-        <div className="absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-white via-white/90 to-transparent"></div>
-
-        {/* Logos container with infinite scrolling */}
-        <div
-          ref={carouselRef}
-          className="flex items-center gap-12 overflow-hidden px-8 whitespace-nowrap"
-        >
-          {[...logos, ...logos].map((logo, index) => (
-            <div key={index} className="flex min-w-[120px] items-center justify-center">
-              <Image
-                src={logo.src} 
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="object-contain"
-              />
-            </div>
-          ))}
-        </div>
+      {/* Static Logos container */}
+      <div className="flex flex-wrap items-center justify-center gap-12 px-8">
+        {logos.map((logo, index) => (
+          <div key={index} className="flex items-center justify-center">
+            <Image
+              src={logo.src}
+              alt={logo.name}
+              width={logo.width}
+              height={logo.height}
+              className="object-contain"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
 }
+
 
 
 
