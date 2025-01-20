@@ -9,11 +9,13 @@ export default function TrustedBy() {
     { name: "Cerro", src: "/images/cerro.jpg", width: 130, height: 64 },
     { name: "Goli Soda", src: "/images/Goli.avif", width: 160, height: 64 },
     { name: "Brand Name", src: "/images/bf.avif", width: 110, height: 64 },
+    { name: "Brand Name", src: "/images/dc.svg", width: 110, height: 64 },
+    { name: "Brand Name", src: "/images/fm.webp", width: 110, height: 64 },
     { name: "Another Brand", src: "/images/bi.png", width: 140, height: 64 }
   ];
 
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-16 mt-12">
+    <section className="relative mx-auto max-w-8xl px-4 py-16 mt-12">
       <h2 className="mb-24 text-center text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading">
         Trusted by
         <span className="text-[#0C8EF7] text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading"> Food Importers & Exporters</span>
