@@ -121,7 +121,21 @@ export default function Page() {
                   className="transition-opacity hover:opacity-80"
                 >
                   <Image
-                    src="/images/ap.png"
+                    src="/images/gps.png"
+                    alt="Get ProSessed App from App Store"
+                    width={200}
+                    height={60}
+                    className="cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  href="https://apps.apple.com/in/app/orderit-wholesale-order-app/id6736897489"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-opacity hover:opacity-80"
+                >
+                  <Image
+                    src="/images/aps.webp"
                     alt="Get ProSessed App from App Store"
                     width={200}
                     height={60}
