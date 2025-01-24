@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Prosessed',
-  description: 'Page description',
+  description: 'AI-Powered Smart Order Management For Food Exporters and Importers',
 }
 
 import PageIllustration from '@/components/page-illustration'
@@ -29,7 +29,6 @@ import Testimonial from '@/components/testimonials-blocks'
 export default function Home() {
   return (
     <>
-      {/*  Page illustration */}
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1 " aria-hidden="true">
         <PageIllustration />
       </div>
@@ -37,21 +36,10 @@ export default function Home() {
       <Clients/>
       <Newtabs/>
       <TaglineSection/>
-      {/* <Ttabs/>  */}
      <Stats/>
-      {/* <ComparisonSection/> */}
       <Integration/>
       <Testimonial/>
       <Ctaend/>
-      {/* <AnimatedBeamDemo/> */}
-    
-      {/* <Carousel /> */}
-      {/* <Tabs /> */}
-      
-      {/* <Process /> */}
-      {/* <PricingTables /> */}
-      {/* <TestimonialsBlocks /> */}
-      {/* <FeaturesBlocks /> */}
       <Cta />
     </>
   )

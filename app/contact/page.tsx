@@ -79,7 +79,7 @@ export default function ScheduleDemo() {
         {/* Contact Grid */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-700">
           {/* Call Us Section */}
-          <div className="flex items-center justify-center md:justify-end md:pr-12 pt-4 md:pt-0">
+          <div className="flex items-center justify-center  md:pr-12 pt-4 md:pt-0">
             <svg
               viewBox="0 0 24 24"
               className="w-12 h-12 text-[#2ECC71] mr-6"
@@ -93,7 +93,7 @@ export default function ScheduleDemo() {
             </svg>
             <div>
               <div className="text-sm font-medium text-gray-400 mb-1">CALL US</div>
-              <div className="text-2xl md:text-3xl font-semibold text-[#2ECC71]">
+              <div className="text-2xl md:text-2xl font-semibold text-[#2ECC71]">
               +91 7276106858
               </div>
             </div>

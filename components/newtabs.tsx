@@ -48,7 +48,7 @@ export default function FeaturesSection() {
         <div className="text-center mb-16">
           <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold  mb-4 font-heading">
             Unlock Effortless Global Trade with{' '}
-            <span className="text-[#0095FF]">ProSessed</span>
+            <span className="text-[#0095FF]">Prosessed</span>
           </h1>
           <p className="text-md text-gray-600 max-w-3xl mx-auto">
             Revolutionizing food trade by simplifying cataloging, ordering, planning and payments for all.

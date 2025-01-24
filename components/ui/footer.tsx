@@ -59,9 +59,9 @@ export default function Page() {
         <div className="max-w-4xl text-center md:text-left">
           <h1 className="font-heading text-4xl font-normal sm:text-5xl">
             Unlock the Future of Food Ordering with{" "}
-            <span className="text-[#0C8EF7]">ProSessed's</span>
+            <span className="text-[#0C8EF7]">Prosessed's</span>
           </h1>
-          <h2 className="mb-8 font-heading text-3xl italic sm:text-4xl">
+          <h2 className="mb-8 font-heading text-3xl  sm:text-4xl">
             Seamless AI-Powered Platform.
           </h2>
           <button

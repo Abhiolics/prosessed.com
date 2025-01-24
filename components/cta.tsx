@@ -32,7 +32,7 @@ export default function Cta() {
         {/* Contact Grid */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-700">
           {/* Call Us Section */}
-          <div className="flex items-center justify-center md:justify-end md:pr-12 pt-4 md:pt-0 ">
+          <div className="flex items-center justify-center md:pr-12 pt-4 md:pt-0 ">
           <div className="overflow-hidden flex items-center">
           <svg
               viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ export default function Cta() {
             </div>
             <div>
               <div className="text-sm font-medium text-gray-400 mb-1">CALL US</div>
-              <div className="text-2xl md:text-3xl font-semibold text-[#2ECC71]">
+              <div className="text-2xl md:text-2xl font-semibold text-[#2ECC71]">
               +91 7276106858
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Cta() {
               <path d="M8 14h4" />
             </svg>
             <div>
-              <div className="text-sm font-medium text-gray-400 mb-1">SAY HI</div>
+              <div className="text-sm font-medium text-gray-400 mb-1">EMAIL US AT</div>
               <div className="text-xl md:text-2xl font-semibold text-[#2ECC71]">
                 navneet@prosessed.com
               </div>

@@ -35,13 +35,13 @@ export default function RootLayout({
     AOS.init({
       once: true,
       disable: 'phone',
-      duration: 600,
+      duration: 300,
       easing: 'ease-out-sine',
     })
   })
 
   return (
-    <html lang="en" suppressHydrationWarning>{/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${redhat.variable} font-inter antialiased bg-white text-gray-900 dark:bg-white-900 dark:text-white-200 tracking-tight`}>
         <Theme>
           <div className="flex flex-col min-h-screen overflow-hidden">

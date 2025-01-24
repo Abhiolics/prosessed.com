@@ -14,7 +14,7 @@ export default function HeroSection() {
             Unlock The{' '}
             <span className="text-[#005906] font-semibold ">Full Revenue Potential</span>{' '}
             of Your Import-Export Business with{' '}
-            <span className="text-[#0095FF] font-semibold">ProSessed</span>
+            <span className="text-[#0095FF] font-semibold">Prosessed</span>
           </h1>
 
           {/* Description */}
