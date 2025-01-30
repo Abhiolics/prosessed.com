@@ -22,6 +22,7 @@ import Integration from '@/components/integration'
 import Ctaend from '@/components/ctaend'
 import Clients from '@/components/clients'
 import Testimonial from '@/components/testimonials-blocks'
+import Head from 'next/head'
 
 
 
@@ -29,6 +30,14 @@ import Testimonial from '@/components/testimonials-blocks'
 export default function Home() {
   return (
     <>
+    <Head>
+        <meta property="og:title" content="AI Powered Order Management Platform for Food Importers and Exporters" />
+        <meta property="og:site_name" content="Prosessed" />
+        <meta property="og:url" content="https://www.prosessed.ai/" />
+        <meta property="og:description" content="Streamline your cross-border operations with AI-driven tools from quote to payment." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.prosessed.ai/images/HeroImg.svg" />
+      </Head>
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1 " aria-hidden="true">
         <PageIllustration />
       </div>
