@@ -51,7 +51,7 @@ const teamMembers = [
   {
     name: "Tejaswi",
     role: "Founders Office",
-    image: "/images/tej.jpg",
+    image: "/images/Tej.jpg",
     linkedin: "https://www.linkedin.com/in/tejaswi-r-43b3b4214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
