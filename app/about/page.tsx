@@ -38,7 +38,7 @@ const teamMembers = [
   },
   {
     name: "Jaspreet Singh",
-    role: "Founding SWE Engineer",
+    role: "Founding Software Engineer",
     image: "/images/Js.png",
     linkedin: "https://www.linkedin.com/in/jaspreetsodhi482/",
   },
