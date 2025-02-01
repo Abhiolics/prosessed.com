@@ -57,7 +57,7 @@ export default function Page() {
     <div className="min-h-screen bg-black text-white">
       <main className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-4xl text-center md:text-left">
-          <h1 className="font-heading text-4xl font-normal sm:text-5xl">
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-4xl font-normal  ">
             Unlock the Future of Food Ordering with{" "}
             <span className="text-[#0C8EF7]">Prosessed's</span>
           </h1>
@@ -163,9 +163,9 @@ export default function Page() {
             <div>
               <h3 className="mb-6 text-lg font-semibold">MORE LINKS</h3>
               <nav className="space-y-3 font-heading">
-                {/* <Link href="/faq" className="block text-gray-400 transition-colors hover:text-white">
-                  FAQs
-                </Link> */}
+                <Link href="/about" className="block text-gray-400 transition-colors hover:text-white">
+                  About Us
+                </Link>
                 <Link href="/contact" className="block text-gray-400 transition-colors hover:text-white">
                   Contact Us
                 </Link>
