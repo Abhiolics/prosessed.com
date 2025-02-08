@@ -1,16 +1,26 @@
-import VideoThumb from '@/public/images/mockup-image-01.jpg'
-import ModalVideoIphone from '@/components/modal-video-iphone'
-import Image from 'next/image'
+"use client"
+
+import HeroSection from "@/components/integration"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, FileSpreadsheet, Zap, CreditCard, FileCheck, Store, Users } from "lucide-react"
-import HeroSection from '@/components/integration'
-import Link from 'next/link'
-import TrustedBy from '@/components/clients'
+import Image from "next/image"
+import Link from "next/link"
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import TrustedBy from "@/components/clients"
+import Cta from "@/components/cta"
 
-export default function exporters() {
+
+
+
+export default function LandingPage() {
+    const [dropped, setDropped] = useState(false);
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-44 sm:mt-40 md:mt-2">
+    
+   <section>
+<div className="max-w-6xl mx-auto px-4 sm:px-6 mt-44 sm:mt-40 md:mt-2">
         <div className=" pb-20 md:pt-40 md:pb-16">
 
           {/* Hero content */}
@@ -18,8 +28,8 @@ export default function exporters() {
 
             {/* Content */}
             <div className="md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left">
-              <h1 className="h2 text-3xl lg:text-4xl mb-4 font-semibold  font-heading" data-aos="fade-down"><span className='text-[#0C8EF7]'>Seamlessly Manage Exports,</span> & Boost Profits</h1>
-              <p className="text-xl text-gray-600 dark:text-gray-400 font-heading" data-aos="fade-down" data-aos-delay="150">Transform your export process with intelligent tools crafted to simplify, optimize and streamline every stage of your operations.</p>
+              <h1 className="h2 text-3xl lg:text-4xl mb-4 font-semibold  font-heading" data-aos="fade-down"><span className='text-[#0C8EF7]'>Effortlessly Manage Imports,</span>Orders Like Never Before</h1>
+              <p className="text-xl text-gray-600 dark:text-gray-400 font-heading" data-aos="fade-down" data-aos-delay="150"> Revolutionize your operations with smart tools designed to simplify and streamline every step of the import process.</p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
                 <div className="flex flex-col sm:flex-row  max-w-sm mx-auto sm:max-w-md md:mx-0">
@@ -33,7 +43,7 @@ export default function exporters() {
             {/* Mobile mockup */}
             <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">
 
-              <img src="/images/ExpoImg.svg" alt="Exporters Image" />
+              <img src="/images/ImpoImg.svg" alt="Exporters Image" />
             </div>
 
           </div>
@@ -41,15 +51,14 @@ export default function exporters() {
         </div>
       </div>
 
-
-
-      <section className="relative container mx-auto px-6 sm:px-12 lg:px-20 py-20 md:py-32">
+  {/* Features Section */}
+  <section className="relative container mx-auto px-6 sm:px-12 lg:px-20 py-20 md:py-32">
     <div className="text-center max-w-5xl mx-auto mb-20 space-y-6">
       <h2 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading">
-        Streamline Your Export <span className="text-blue-600">Business with Ease</span>
+        Streamline Your Import Business with <span className="text-blue-600">Smart Solutions</span>
       </h2>
       <p className="text-lg text-gray-600">
-      Streamline exports with smarter tools, seamless operations and effortless compliance.
+        Our comprehensive suite of tools is designed to make your import operations smoother and more efficient than ever before.
       </p>
     </div>
 
@@ -73,15 +82,11 @@ export default function exporters() {
     </div>
   </section>
 
-
-  <div>
-  <HeroSection/>
-  </div>
-
+  {/* CTA Section */}
   <section className="relative container mx-auto px-6 sm:px-12 lg:px-20 py-20 md:py-8 text-center">
-    <h2 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading mb-8">Ready to Simplify Your Exports?</h2>
+    <h2 className="text-2xl sm:text-4xl lg:text-4xl font-semibold font-heading mb-8">Ready to Simplify Your Imports?</h2>
     <p className="text-lg sm:text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-heading">
-      Join thousands of businesses that have transformed their export operations with our platform.
+      Join thousands of businesses that have transformed their import operations with our platform.
     </p>
     <Link href="/contact" passHref>
   <button
@@ -105,14 +110,21 @@ export default function exporters() {
 </Link>
   </section>
 
-  <section>
+
+<section className="py-12 md:py-24 mx-auto px-6 sm:px-12 lg:px-20">
+  <HeroSection/>  
+</section>
+
+
+
+<section>
 <div className="min-h-screen bg-white">
       <main className="container mx-auto px-4 md:px-6 lg:px-8 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <h1 className="text-2xl sm:text-4xl lg:text-4xl font-heading font-semibold mb-16 text-center">
+          <h1 className="text-2xl sm:text-4xl lg:text-4xl font-semibold mb-16 text-center font-heading">
             <span className="text-gray-900">Prosessed's </span>
-            <span className="text-blue-500">OrderIt for Exporters</span>
+            <span className="text-blue-500">OrderIt for Importers</span>
           </h1>
 
           {/* Features Grid */}
@@ -122,29 +134,20 @@ export default function exporters() {
               {/* Browse and discover */}
               <div className="flex gap-6">
                 <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-  className="w-8 h-8 text-green-500"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  strokeWidth="2"
-  strokeLinecap="round"
-  strokeLinejoin="round"
->
-  <polygon points="13 2 3 14 12 14 11 22 21 10 13 10 13 2" />
-</svg>
-
-
-
+                  <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                    />
+                  </svg>
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold mb-2">Quick Prosessing</h2>
+                  <h2 className="text-xl font-bold mb-2">Browse and discover</h2>
                   <p className="text-gray-600">
-                  Accelerate your quotes and order
-processing with streamlined workflows, 
-reducing turnaround time and boosting
-efficiency.
+                    Easily search through your supplier's entire Digital Catalogue. See their latest products and offers
+                    and discover new trends.
                   </p>
                 </div>
               </div>
@@ -152,33 +155,20 @@ efficiency.
               {/* Order with confidence */}
               <div className="flex gap-6">
                 <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-  className="w-8 h-8 text-green-500"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  strokeWidth={2}
->
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z"
-  />
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M9 12l2 2 4-4"
-  />
-</svg>
-
+                  <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold mb-2">Seamless Compliance</h2>
+                  <h2 className="text-xl font-bold mb-2">Order with confidence</h2>
                   <p className="text-gray-600">
-                  Ensure top-notch compliance, maintain 
-quality standards, and manage 
-documentation effortlessly for a 
-smooth export process.
+                    Choose the exact items you need and how many of each. Set your delivery date and add any special
+                    instructions.
                   </p>
                 </div>
               </div>
@@ -186,38 +176,20 @@ smooth export process.
               {/* Easy quick payments */}
               <div className="flex gap-6">
                 <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-  className="w-8 h-8 text-green-500"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  strokeWidth={2}
->
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M3 4h18l-2 6H5L3 4z"
-  />
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M5 10v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-  />
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M9 14h6"
-  />
-</svg>
-
+                  <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold mb-2">Custom Storefront</h2>
+                  <h2 className="text-xl font-bold mb-2">Easy quick payments</h2>
                   <p className="text-gray-600">
-                  Build an app-based storefront
-to enhance customer experience, 
-simplify ordering, and boost
-customer retention.
+                    Stay on top of your invoice payments by paying automatically as per the terms arranged with your
+                    supplier.
                   </p>
                 </div>
               </div>
@@ -225,27 +197,20 @@ customer retention.
               {/* PO & Container Planning */}
               <div className="flex gap-6">
                 <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-  className="w-8 h-8 text-green-500"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  strokeWidth={2}
->
-  <text x="5" y="18" fontSize="16" fontWeight="" fill="currentColor">$ </text>
-</svg>
-
-
-
-
+                  <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold mb-2">Multi-Currency Advantage</h2>
+                  <h2 className="text-xl font-bold mb-2">PO & Container Planning</h2>
                   <p className="text-gray-600">
-                  Manage transactions seamlessly with 
-multi-currency accounts, ensuring the
-lowest FX rates for cost-effective global
-trade.
+                    Fasttrack your process of buying by our dynamic container capacity tool and automated PO creation
+                    based on inventory levels
                   </p>
                 </div>
               </div>
@@ -254,7 +219,7 @@ trade.
             {/* Right Column - Image */}
             <div className="relative h-[600px] w-full">
               <Image
-                src="/images/ExpoImg2.svg"
+                src="/images/ImpoImg2.svg"
                 alt="OrderIt App Interface"
                 fill
                 className="object-contain"
@@ -266,7 +231,9 @@ trade.
       </main>
     </div>
 </section>
-   
+
+
+
 
 <section>
 <div className="flex items-center justify-center p-6 ">
@@ -309,7 +276,7 @@ trade.
 
 
 <section>
-  <TrustedBy/>
+<TrustedBy/>
 </section>
 
 <section>
@@ -399,47 +366,51 @@ trade.
       {/* <div className="bg-[#000033] h-32 mt-0"></div> */}
     </div>
   </section>
-    
-    </section>
+</section>
+
   )
 }
+
 
 
 const features = [
   {
     icon: Zap,
-    title: "Catalog Management",
+    title: "Smart Ordering",
     description:
-      "Our wholesale ordering app enables importers to request quotes, connect with buyers, and share offers effortlessly, ensuring global visibility with real-time pricing and dynamic catalogs.",
+      "Leverage AI to automate order creation based on sales patterns, ensuring timely inventory replenishment and inventory management.",
   },
   {
     icon: FileSpreadsheet,
-    title: "Intelligent Quoting ",
+    title: "Automated PO Creation",
     description:
-      "Enable customers to log in and place quotes effortlessly with automated generation, real-time currency conversion, custom pricing rules and instant quote sharing.",
+      "Leverage AI to automate purchase order creation based on sales patterns, ensuring timely inventory replenishment and inventory management.",
   },
   {
     icon: CreditCard,
-    title: "Compliance Intelligence",
+    title: "Payment Automation",
     description:
-      "Ensure seamless trade with pre-defined checklists, automated regulation checks, real-time compliance tracking and country-specific documentation templates.",
+      "Streamline payment collection with automated workflows, ensuring faster transactions and simplified payment management.",
   },
   {
     icon: FileCheck,
-    title: "Order Processing ",
+    title: "Rapid Order to Invoice",
     description:
-      "Streamline order fulfillment with export-compliant packing lists, dynamic shipment volume calculators, batch management and fast-tracked processing for improved timelines.",
+      "Accelerate your ordering to invoice process with seamless integration, reducing manual steps and improving operational efficiency.",
   },
   {
     icon: Store,
-    title: "Streamlined Payment",
+    title: "Product Showcase",
     description:
-      "Enable exporters to open bank accounts in 33 currencies with our partner Pay local, get the lowest forex markup, instant payment notifications, E-FIRA generation, card payment options, and hassle-free reconciliation.",
+      "Present your products in an attractive way with easy setup relative pricing and drive customer engagement effectively.",
   },
   {
     icon: Users,
-    title: "Optimized Operations",
+    title: "Customer Self-Service",
     description:
-      "Save time and reduce costs with automated workflows, smart order processing and seamless logistics integration, ensuring faster shipments and higher efficiency.",
+      "Empower your customers with a dashboard to place orders, track payments and stay updated with real-time order status.",
   },
 ]
+
+
+

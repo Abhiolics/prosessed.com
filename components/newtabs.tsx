@@ -119,7 +119,7 @@ export default function FeaturesSection() {
             <h3 className="text-2xl sm:text-3xl font-bold mb-6">
               {currentFeature.cta}
             </h3>
-            <Link href="/contact" passHref>
+            <Link href="/importers" passHref>
   <button
     className="bg-black text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors inline-flex items-center gap-2 group"
   >
