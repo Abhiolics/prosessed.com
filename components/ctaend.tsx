@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Ctaend() {
   return (
-    <main className=" bg-white px-4 py-12 md:py-24">
+    <main className=" bg-white px-4 py-12 md:py-24 mb-24">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Section */}
         <div className="mb-12 text-center md:mb-20">

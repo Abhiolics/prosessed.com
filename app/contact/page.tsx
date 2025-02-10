@@ -117,7 +117,7 @@ export default function ScheduleDemo() {
             <div>
               <div className="text-sm font-medium text-gray-400 mb-1">SAY HI</div>
               <div className="text-xl md:text-2xl font-semibold text-[#2ECC71]">
-                navneet@prosessed.com
+                care@prosessed.com
               </div>
             </div>
           </div>

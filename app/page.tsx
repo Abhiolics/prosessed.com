@@ -50,7 +50,7 @@ export default function Home() {
       <Integration/>
       <Testimonial/>
       <Ctaend/>
-      <Cta />
+      {/* <Cta /> */}
     </>
   )
 }
